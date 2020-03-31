@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".Bandarban.bandarban_dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/dhaka_tool_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/toolbar_logo_bandarban"></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dhaka_tool_bar_id">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/logos_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageButton
+                    android:id="@+id/transport_id"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_directions_bus_black_24dp"
+                    android:elevation="5dp"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/hostel_id"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/transport_id"
+                    android:background="@drawable/ic_domain_black_24dp"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/restrurants_id"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/hostel_id"
+                    android:background="@drawable/ic_restaurant_menu_black_24dp"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/Maps_id"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/restrurants_id"
+                    android:background="@drawable/ic_location_on_black_24dp"></ImageButton>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logos_id">
+
+                <TextView
+                    android:id="@+id/text1_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hall_of_fame_bold"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Tourism Places..."
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1_id"
+                    android:layout_centerInParent="true">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/historical_places"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/rounded_user_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/historical_bandarban" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingBottom="3dp"
+                                android:text="Historical Places"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"></TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/natural_parks_places"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_toRightOf="@id/historical_places"
+                        android:elevation="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/natural_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:padding="5dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/natural_park_bandarban" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingBottom="3dp"
+                                android:text="Parks Places"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"></TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

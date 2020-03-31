@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/dhaka_id"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/dhaka"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dhaka_id"
+                        android:layout_margin="10dp"
+                        android:text="Dhaka"
+                        android:id="@+id/text_dhaka"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/point_text_id"
+                        android:layout_below="@id/dhaka_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_toRightOf="@id/text_dhaka"
+                        ></TextView>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/dhaka_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/point_text_id"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/cardview1"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:id="@+id/cardview2"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/Sylhet_id"
+                        android:layout_width="400dp"
+                        android:layout_height="350dp"
+                        android:src="@drawable/sylhet_pic"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Sylhet_id"
+                        android:layout_margin="10dp"
+                        android:text="Sylhet"
+                        android:id="@+id/text_sylhet"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/point_text_id2"
+                        android:layout_below="@id/Sylhet_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_toRightOf="@id/text_sylhet"
+                        ></TextView>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/Sylhet_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/point_text_id2"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:layout_margin="25dp"
+                android:layout_below="@+id/cardview2"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/Bandarban_id"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/toolbar_logo_bandarban"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Bandarban_id"
+                        android:layout_margin="10dp"
+                        android:text="Bandarban"
+                        android:id="@+id/text_bandarban"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.4"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/point_text_id3"
+                        android:layout_below="@id/Bandarban_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="110dp"
+                        android:layout_toRightOf="@id/text_bandarban"
+                        ></TextView>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/Bandarban_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/point_text_id3"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:layout_margin="25dp"
+                android:layout_below="@+id/cardview3"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp">
+
+                    <ImageButton
+                        android:id="@+id/Coxbazar_id"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/toolbar_logo_coxbazar"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Coxbazar_id"
+                        android:layout_margin="10dp"
+                        android:text="Cox's Bazar"
+                        android:id="@+id/text_Coxbazar"
+                        android:textColor="@android:color/black"
+                        android:textSize="25dp"></TextView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/point_text_id4"
+                        android:layout_below="@id/Coxbazar_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_toRightOf="@id/text_Coxbazar"
+                        ></TextView>
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/Coxbazar_id"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/point_text_id4"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
